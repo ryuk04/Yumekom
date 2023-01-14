@@ -33,7 +33,7 @@ DURATION_LIMIT_MIN = int(
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "60")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -44,7 +44,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Yumeko Music")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5013171832").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -81,7 +81,7 @@ AUTO_LEAVE_ASSISTANT_TIME = int(
 
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
-    getenv("AUTO_SUGGESTION_TIME", "5400")
+    getenv("AUTO_SUGGESTION_TIME", "10000")
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
@@ -117,7 +117,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "5")
+    getenv("CLEANMODE_MINS", "9999999999")
 )  # Remember to give value in Seconds
 
 
